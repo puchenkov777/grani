@@ -1,7 +1,6 @@
 /* 2026 campaign direction: energetic learning-school typography in Grani colors. */
 :root{--display:'Oswald','Arial Narrow',Arial,sans-serif;--black:#101010;--orange:#ff941f;--orange-deep:#d46d00;--cream:#f7f4ed}
-html{scroll-padding-bottom:90px}
-body{background:var(--cream);padding-bottom:92px}
+body{background:var(--cream)}
 .brand-name{font-family:'Montserrat',Arial,sans-serif}
 .site-header{background:var(--black)}
 .header-inner{height:76px}
@@ -13,13 +12,6 @@ body{background:var(--cream);padding-bottom:92px}
 h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spacing:-.045em;text-transform:uppercase}
 .section-heading>p{font-weight:600}
 .section{padding:116px 0}
-
-/* One persistent place to switch between the platform and its program. */
-.bottom-tabs{position:fixed;z-index:100;left:50%;bottom:16px;transform:translateX(-50%);display:grid;grid-template-columns:1fr 1fr;gap:4px;width:min(440px,calc(100% - 32px));padding:5px;background:#fff;border:1px solid var(--black);box-shadow:0 12px 32px rgba(0,0,0,.22)}
-.bottom-tabs a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:9px 16px;font:900 12px/1 'Montserrat',Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase;color:var(--black);transition:background .2s}
-.bottom-tabs a:hover{background:var(--cream)}
-.bottom-tabs a[aria-current=page],.bottom-tabs a[aria-current=page]:hover{background:var(--orange)}
-.bottom-tabs span{font:700 22px/1 var(--display)}
 
 /* Short, colorful routes borrow the quick-scanning feel of education sites. */
 .jump-rail{background:var(--black);padding:9px 0 20px;color:#fff}
@@ -143,9 +135,6 @@ h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spaci
   .hero-art .art-orbit-two{width:500px;height:500px}
 }
 @media(max-width:600px){
-  body{padding-bottom:calc(75px + env(safe-area-inset-bottom))}
-  .bottom-tabs{bottom:0;width:100%;gap:0;padding:5px 10px calc(5px + env(safe-area-inset-bottom));border:0;border-top:1px solid var(--black);box-shadow:0 -8px 24px rgba(0,0,0,.16)}
-  .bottom-tabs a{min-height:54px;font-size:11px}
   h2{font-size:clamp(48px,13vw,67px)}
   .section{padding:76px 0}
   .jump-rail a{flex-basis:190px;min-height:90px;padding:13px}
@@ -182,8 +171,6 @@ h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spaci
   .shell{width:calc(100% - 28px)}
   .hero h1,.program-hero h1{font-size:clamp(43px,13.5vw,50px)}
   .jump-rail a{flex-basis:172px}
-  .bottom-tabs a{gap:6px;padding-inline:8px;font-size:10px}
   .program-hero-note{letter-spacing:0}
 }
 @media(prefers-reduced-motion:reduce){.jump-rail a{transition:none}}
-@media print{body{padding-bottom:0}.bottom-tabs{display:none}}
