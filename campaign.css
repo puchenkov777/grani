@@ -1,0 +1,178 @@
+/* 2026 campaign direction: energetic learning-school typography in Grani colors. */
+:root{--display:'Oswald','Arial Narrow',Arial,sans-serif;--black:#101010;--orange:#ff941f;--orange-deep:#d46d00;--cream:#f7f4ed}
+body{background:var(--cream)}
+.brand-name{font-family:'Montserrat',Arial,sans-serif}
+.site-header{background:var(--black)}
+.header-inner{height:76px}
+.desktop-nav a{font-weight:800;text-transform:uppercase;letter-spacing:.015em;font-size:11px}
+.header-action,.button{border-radius:0;font-family:'Montserrat',Arial,sans-serif;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.02em}
+.header-action{min-height:42px}
+.button{min-height:58px}
+.eyebrow{font-family:'Montserrat',Arial,sans-serif;font-weight:900;letter-spacing:.12em}
+h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spacing:-.045em;text-transform:uppercase}
+.section-heading>p{font-weight:600}
+.section{padding:116px 0}
+
+/* Short, colorful routes borrow the quick-scanning feel of education sites. */
+.jump-rail{background:var(--black);padding:9px 0 20px;color:#fff}
+.jump-rail-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.jump-rail a{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:110px;padding:16px 20px;overflow:hidden;background:#292929;border:1px solid rgba(255,255,255,.16);transition:transform .22s,background .22s}
+.jump-rail a:hover{transform:translateY(-4px);background:#3a3028}
+.jump-rail a:nth-child(1){background:#f3e9d8;color:var(--black)}
+.jump-rail a:nth-child(2){background:var(--orange);color:var(--black)}
+.jump-rail a:nth-child(3){background:#343436}
+.jump-rail a:nth-child(4){background:#684327}
+.jump-rail a::after{content:'✳';position:absolute;right:35px;bottom:-35px;font:900 100px/1 'Montserrat',sans-serif;opacity:.12;transform:rotate(-15deg)}
+.jump-rail a:nth-child(2)::after{content:'◆';bottom:-18px;right:20px;font-size:100px;opacity:.18}
+.jump-rail span{position:relative;z-index:1;font:800 9px/1.3 'Montserrat',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.jump-rail strong{position:relative;z-index:1;max-width:210px;font:700 24px/.98 var(--display);letter-spacing:-.025em;text-transform:uppercase}
+.jump-rail i{position:absolute;z-index:1;right:15px;top:13px;font:normal 20px/1 var(--body)}
+
+/* Main campaign hero */
+.hero,.program-hero{background:var(--black)}
+.hero-grid{grid-template-columns:1.02fr .98fr;min-height:640px;gap:0}
+.hero-copy{padding:60px 0 65px}
+.hero-eyebrow{margin-bottom:28px}
+.hero h1,.program-hero h1{position:relative;z-index:3;max-width:none;font:700 clamp(75px,7.9vw,120px)/.91 var(--display);letter-spacing:-.045em;text-transform:uppercase}
+.hero-line{display:block;position:relative;width:max-content;max-width:100%;white-space:nowrap}
+.hero h1 .hero-line{color:#fff}
+.hero h1 .hero-line-box,.program-hero h1 .hero-line-box{width:max-content;max-width:100%;margin:.07em 0 .08em;padding:0 .13em .08em .1em;background:#fff;color:var(--black);transform:rotate(-1.15deg);box-decoration-break:clone}
+.hero h1 .period{color:var(--orange)!important}
+.hero-lead{max-width:510px;margin-top:30px;color:#dfdcd6;font-size:16px;font-weight:600;line-height:1.65}
+.hero-actions{margin-top:32px;gap:27px}
+.hero-actions .button{min-width:260px}
+.hero-art{height:610px;align-self:end;overflow:visible}
+.hero-art::before{inset:4% -12% 0 -8%;z-index:-3;background:radial-gradient(circle at 60% 60%,rgba(255,148,31,.28),transparent 64%)}
+.hero-art .art-orbit{border-style:dashed;border-color:rgba(255,255,255,.1)}
+.hero-art .art-orbit-one{width:430px;height:430px}
+.hero-art .art-orbit-two{width:610px;height:610px}
+.hero-art .art-prism{z-index:-1;width:450px;left:51%;top:45%;opacity:.52;animation:none;filter:brightness(1.6) saturate(1.2) hue-rotate(-18deg)}
+.hero-photo-frame{position:absolute;z-index:1;inset:30px -55px 0 -45px;display:flex;align-items:end;justify-content:center;overflow:hidden}
+.hero-photo-frame::before{content:'';position:absolute;left:10%;right:2%;top:17%;bottom:3%;background:linear-gradient(135deg,#ffad43,#e4770b);clip-path:polygon(12% 0,78% 4%,100% 34%,93% 98%,18% 100%,0 40%);transform:rotate(-5deg)}
+.hero-photo{position:relative;width:112%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 20px 28px rgba(0,0,0,.35));-webkit-mask-image:radial-gradient(ellipse 80% 85% at 50% 55%,#000 64%,transparent 100%);mask-image:radial-gradient(ellipse 80% 85% at 50% 55%,#000 64%,transparent 100%)}
+.art-note{z-index:3;border:0;backdrop-filter:none;padding:10px 14px;background:#fff;color:var(--black);font-family:'Montserrat',Arial,sans-serif;font-size:10px;font-weight:900;box-shadow:6px 6px 0 var(--orange)}
+.art-note-top{right:-5px;top:14%;transform:rotate(4deg)}
+.art-note-bottom{left:-7%;bottom:12%;background:var(--orange);box-shadow:6px 6px 0 #fff;transform:rotate(-4deg)}
+.art-spark{z-index:3;right:0;bottom:5%;font-size:65px;color:#fff}
+.hero-bottom{position:relative;z-index:2;border-color:rgba(255,255,255,.22)}
+
+/* Brighter rhythm and stronger blocks below the fold. */
+.intro-strip{background:var(--orange);color:var(--black)}
+.intro-title{font:700 30px/.95 var(--display);text-transform:uppercase;letter-spacing:-.03em}
+.intro-title span{color:#fff}
+.intro-step{border-color:rgba(0,0,0,.24)}
+.intro-step span{color:var(--black);font:700 30px/.9 var(--display)}
+.intro-step p{font-weight:800}
+.directions{background:var(--cream)}
+.directions-grid{gap:12px}
+.direction-card{border-radius:16px;border:1px solid rgba(16,16,16,.1)}
+.direction-card-feature{min-height:450px}
+.direction-card h3{font:700 clamp(34px,3.5vw,52px)/.98 var(--display);letter-spacing:-.035em;text-transform:uppercase}
+.direction-card p{font-size:13px;font-weight:700}
+.direction-card::after{position:absolute;right:18px;top:28px;font:700 100px/.8 var(--display);opacity:.09;pointer-events:none}
+.direction-card:nth-child(1)::after{content:'01'}.direction-card:nth-child(2)::after{content:'02'}.direction-card:nth-child(3)::after{content:'03'}.direction-card:nth-child(4)::after{content:'04'}.direction-card:nth-child(5)::after{content:'05'}
+.direction-card .card-top{font-family:'Montserrat',Arial,sans-serif}
+.featured-program{background:#f1e7d9;padding:110px 0}
+.featured-copy h2{font-size:clamp(58px,5.3vw,80px)}
+.featured-panel{border-radius:16px;transform:rotate(1deg);box-shadow:13px 13px 0 var(--orange)}
+.featured-panel-top{font-family:'Montserrat',Arial,sans-serif}
+.featured-facts strong{font-size:50px;letter-spacing:-.02em}
+.how{background:#fff}
+.how-item h3{font:700 26px/1.05 var(--display);text-transform:uppercase;letter-spacing:-.02em}
+.about{background:#171717}
+.about-visual{border-radius:16px;background:#24201c}
+.about-values strong{font:700 23px/1 var(--display);text-transform:uppercase}
+.team{background:var(--cream)}
+.team-group summary strong{font:700 clamp(25px,2.6vw,36px)/1 var(--display);text-transform:uppercase;letter-spacing:-.025em}
+.person{border-radius:10px}
+.cta h2,.program-apply h2{font-size:clamp(58px,7vw,104px)}
+
+/* The curriculum page uses the same campaign system. */
+.program-hero-grid{grid-template-columns:1.04fr .96fr;min-height:640px;gap:0}
+.program-hero-copy{padding:55px 0 70px}
+.program-hero h1{font-size:clamp(68px,7vw,106px)}
+.program-hero h1 .hero-line{color:#fff}
+.program-hero-copy>p:not(.eyebrow):not(.program-hero-note){max-width:520px;margin-top:30px;color:#ddd9d3;font-size:16px;font-weight:600}
+.program-hero-actions{margin-top:32px}
+.program-hero-art{height:610px;align-self:end;overflow:visible}
+.program-hero-art .program-prism{z-index:-1;width:440px;opacity:.45;filter:brightness(1.5) saturate(1.4) hue-rotate(-18deg);transform:translate(-50%,-50%) rotate(-18deg)}
+.program-photo-frame{position:absolute;z-index:1;inset:10px -15px 0 -45px;overflow:hidden;display:flex;align-items:end;justify-content:center}
+.program-photo-frame::before{content:'';position:absolute;left:9%;right:2%;top:18%;bottom:3%;background:linear-gradient(145deg,#f5aa4c,#d6720c);clip-path:polygon(8% 7%,76% 0,100% 26%,93% 100%,10% 98%,0 38%);transform:rotate(4deg)}
+.program-hero-art .program-photo{position:relative;z-index:2;width:100%;height:100%;max-width:none;left:auto;top:auto;transform:none;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 20px 26px rgba(0,0,0,.35));-webkit-mask-image:radial-gradient(ellipse 80% 82% at 50% 52%,#000 66%,transparent 100%);mask-image:radial-gradient(ellipse 80% 82% at 50% 52%,#000 66%,transparent 100%)}
+.program-art-label{z-index:3;right:0;bottom:10%;border:0;background:#fff;color:var(--black);font-family:'Montserrat',Arial,sans-serif;font-weight:900;box-shadow:6px 6px 0 var(--orange);transform:rotate(-4deg)}
+.program-stats{background:var(--orange);color:var(--black)}
+.program-stats-grid div{border-color:rgba(0,0,0,.22)}
+.program-stats strong{font-size:56px;color:var(--black);letter-spacing:-.02em}
+.program-stats span{color:#32281f;font-weight:700}
+.format-card{border-radius:15px}
+.format-card h3{font:700 clamp(27px,2.8vw,40px)/1.02 var(--display);text-transform:uppercase;letter-spacing:-.025em}
+.format-card p{font-weight:600}
+.syllabus-item{border-radius:13px}
+.syllabus-number{font-size:43px;letter-spacing:-.02em}
+.syllabus-item h3{font:700 clamp(25px,2.5vw,34px)/1.08 var(--display);text-transform:uppercase;letter-spacing:-.02em}
+.syllabus-hours{border-radius:0;font-weight:900}
+.outcomes-grid div{border-radius:12px;font:700 21px/1.06 var(--display);text-transform:uppercase;letter-spacing:-.015em}
+.certificate{border-radius:15px}
+.certificate h3{font:700 clamp(48px,5vw,72px)/.94 var(--display);text-transform:uppercase;letter-spacing:-.03em}
+.faq-list summary{font:700 25px/1.12 var(--display);text-transform:uppercase;letter-spacing:-.015em}
+.organization-links a{border-radius:0}
+
+@media(max-width:1100px){
+  .hero h1{font-size:clamp(68px,7.6vw,100px)}
+  .program-hero h1{font-size:clamp(64px,6.8vw,90px)}
+  .hero-photo-frame{inset:45px -35px 0 -60px}
+  .program-photo-frame{inset:45px -30px 0 -45px}
+}
+@media(max-width:950px){
+  .header-inner{height:72px}
+  .jump-rail{padding-bottom:12px}
+  .jump-rail-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;scrollbar-width:none}
+  .jump-rail-grid::-webkit-scrollbar{display:none}
+  .jump-rail a{flex:0 0 225px;min-height:100px;scroll-snap-align:start}
+  .hero-grid,.program-hero-grid{grid-template-columns:1fr}
+  .hero-copy,.program-hero-copy{padding:68px 0 18px}
+  .hero h1,.program-hero h1{font-size:clamp(76px,11.4vw,112px)}
+  .hero-art,.program-hero-art{height:430px;min-height:0;width:min(100%,700px);justify-self:center}
+  .hero-photo-frame{inset:-15px 0 0}
+  .program-photo-frame{inset:-5px 0 0}
+  .hero-art .art-prism,.program-hero-art .program-prism{width:390px}
+  .hero-art .art-orbit-one{width:340px;height:340px}
+  .hero-art .art-orbit-two{width:500px;height:500px}
+}
+@media(max-width:600px){
+  h2{font-size:clamp(48px,13vw,67px)}
+  .section{padding:76px 0}
+  .jump-rail a{flex-basis:190px;min-height:90px;padding:13px}
+  .jump-rail strong{font-size:21px}
+  .jump-rail span{font-size:8px}
+  .hero-copy,.program-hero-copy{padding:52px 0 0}
+  .hero h1,.program-hero h1{font-size:clamp(52px,14.7vw,76px);line-height:.94}
+  .hero h1 .hero-line-box,.program-hero h1 .hero-line-box{padding:0 .11em .07em .08em}
+  .hero-lead,.program-hero-copy>p:not(.eyebrow):not(.program-hero-note){font-size:14px;margin-top:22px}
+  .hero-actions,.program-hero-actions{gap:19px;margin-top:26px}
+  .hero-art,.program-hero-art{height:310px;width:100%;margin-top:20px}
+  .hero-photo-frame{inset:-8px -12px 0}
+  .program-photo-frame{inset:-8px -12px 0}
+  .hero-art .art-prism,.program-hero-art .program-prism{width:290px}
+  .art-note,.program-art-label{font-size:8px;padding:8px}
+  .art-note-top{right:3%;top:13%}
+  .art-note-bottom{left:2%;bottom:5%}
+  .art-spark{font-size:40px}
+  .intro-title{font-size:27px}
+  .intro-step span{font-size:25px}
+  .direction-card h3{font-size:39px}
+  .featured-program{padding:80px 0}
+  .featured-copy h2{font-size:clamp(50px,12vw,66px)}
+  .featured-panel{transform:none;box-shadow:8px 8px 0 var(--orange)}
+  .how-item h3{font-size:23px}
+  .team-group summary strong{font-size:22px}
+  .cta h2,.program-apply h2{font-size:clamp(56px,13vw,70px)}
+  .program-stats strong{font-size:46px}
+  .format-card h3{font-size:31px}
+  .syllabus-number{font-size:32px}
+  .syllabus-item h3{font-size:25px}
+  .outcomes-grid div{font-size:16px}
+  .certificate h3{font-size:42px}
+  .faq-list summary{font-size:20px}
+}
+@media(prefers-reduced-motion:reduce){.jump-rail a{transition:none}}
