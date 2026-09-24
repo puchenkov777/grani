@@ -1,6 +1,6 @@
 /* 2026 campaign direction: energetic learning-school typography in Grani colors. */
 :root{--display:'Oswald','Arial Narrow',Arial,sans-serif;--black:#101010;--orange:#ff941f;--orange-deep:#d46d00;--cream:#f7f4ed}
-body{background:var(--cream)}
+body{background:var(--cream);padding-bottom:92px}
 .brand-name{font-family:'Montserrat',Arial,sans-serif}
 .site-header{background:var(--black)}
 .header-inner{height:76px}
@@ -12,6 +12,13 @@ body{background:var(--cream)}
 h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spacing:-.045em;text-transform:uppercase}
 .section-heading>p{font-weight:600}
 .section{padding:116px 0}
+
+/* One persistent place to switch between the platform and its program. */
+.bottom-tabs{position:fixed;z-index:100;left:50%;bottom:16px;transform:translateX(-50%);display:grid;grid-template-columns:1fr 1fr;gap:4px;width:min(440px,calc(100% - 32px));padding:5px;background:#fff;border:1px solid var(--black);box-shadow:0 12px 32px rgba(0,0,0,.22)}
+.bottom-tabs a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:9px 16px;font:900 12px/1 'Montserrat',Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase;color:var(--black);transition:background .2s}
+.bottom-tabs a:hover{background:var(--cream)}
+.bottom-tabs a[aria-current=page],.bottom-tabs a[aria-current=page]:hover{background:var(--orange)}
+.bottom-tabs span{font:700 22px/1 var(--display)}
 
 /* Short, colorful routes borrow the quick-scanning feel of education sites. */
 .jump-rail{background:var(--black);padding:9px 0 20px;color:#fff}
@@ -72,11 +79,6 @@ h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spaci
 .direction-card::after{position:absolute;right:18px;top:28px;font:700 100px/.8 var(--display);opacity:.09;pointer-events:none}
 .direction-card:nth-child(1)::after{content:'01'}.direction-card:nth-child(2)::after{content:'02'}.direction-card:nth-child(3)::after{content:'03'}.direction-card:nth-child(4)::after{content:'04'}.direction-card:nth-child(5)::after{content:'05'}
 .direction-card .card-top{font-family:'Montserrat',Arial,sans-serif}
-.featured-program{background:#f1e7d9;padding:110px 0}
-.featured-copy h2{font-size:clamp(58px,5.3vw,80px)}
-.featured-panel{border-radius:16px;transform:rotate(1deg);box-shadow:13px 13px 0 var(--orange)}
-.featured-panel-top{font-family:'Montserrat',Arial,sans-serif}
-.featured-facts strong{font-size:50px;letter-spacing:-.02em}
 .how{background:#fff}
 .how-item h3{font:700 26px/1.05 var(--display);text-transform:uppercase;letter-spacing:-.02em}
 .about{background:#171717}
@@ -140,6 +142,9 @@ h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spaci
   .hero-art .art-orbit-two{width:500px;height:500px}
 }
 @media(max-width:600px){
+  body{padding-bottom:calc(75px + env(safe-area-inset-bottom))}
+  .bottom-tabs{bottom:0;width:100%;gap:0;padding:5px 10px calc(5px + env(safe-area-inset-bottom));border:0;border-top:1px solid var(--black);box-shadow:0 -8px 24px rgba(0,0,0,.16)}
+  .bottom-tabs a{min-height:54px;font-size:11px}
   h2{font-size:clamp(48px,13vw,67px)}
   .section{padding:76px 0}
   .jump-rail a{flex-basis:190px;min-height:90px;padding:13px}
@@ -161,9 +166,6 @@ h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spaci
   .intro-title{font-size:27px}
   .intro-step span{font-size:25px}
   .direction-card h3{font-size:39px}
-  .featured-program{padding:80px 0}
-  .featured-copy h2{font-size:clamp(50px,12vw,66px)}
-  .featured-panel{transform:none;box-shadow:8px 8px 0 var(--orange)}
   .how-item h3{font-size:23px}
   .team-group summary strong{font-size:22px}
   .cta h2,.program-apply h2{font-size:clamp(56px,13vw,70px)}
@@ -176,3 +178,4 @@ h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spaci
   .faq-list summary{font-size:20px}
 }
 @media(prefers-reduced-motion:reduce){.jump-rail a{transition:none}}
+@media print{body{padding-bottom:0}.bottom-tabs{display:none}}
