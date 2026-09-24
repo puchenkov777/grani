@@ -1,5 +1,6 @@
 /* 2026 campaign direction: energetic learning-school typography in Grani colors. */
 :root{--display:'Oswald','Arial Narrow',Arial,sans-serif;--black:#101010;--orange:#ff941f;--orange-deep:#d46d00;--cream:#f7f4ed}
+html{scroll-padding-bottom:90px}
 body{background:var(--cream);padding-bottom:92px}
 .brand-name{font-family:'Montserrat',Arial,sans-serif}
 .site-header{background:var(--black)}
@@ -176,6 +177,13 @@ h2{font-size:clamp(54px,5.8vw,86px);font-weight:700;line-height:.98;letter-spaci
   .outcomes-grid div{font-size:16px}
   .certificate h3{font-size:42px}
   .faq-list summary{font-size:20px}
+}
+@media(max-width:360px){
+  .shell{width:calc(100% - 28px)}
+  .hero h1,.program-hero h1{font-size:clamp(43px,13.5vw,50px)}
+  .jump-rail a{flex-basis:172px}
+  .bottom-tabs a{gap:6px;padding-inline:8px;font-size:10px}
+  .program-hero-note{letter-spacing:0}
 }
 @media(prefers-reduced-motion:reduce){.jump-rail a{transition:none}}
 @media print{body{padding-bottom:0}.bottom-tabs{display:none}}
